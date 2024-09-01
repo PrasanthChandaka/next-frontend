@@ -7,10 +7,10 @@ const Testimonials = () => {
     <div className="pb-20 border-b border-neutral-700">
       <h1 className="heading2">What People are saying</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-20 gap-5">
-        {testimonials.map((each) => (
+        {testimonials.map((each, index) => (
           <div
             className="bg-neutral-900 border border-neutral-800 px-4 py-2 rounded-md"
-            key={each.user}
+            key={index}
           >
             <p className="text">{each.text}</p>
             <div className="flex my-5 items-start">

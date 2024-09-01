@@ -13,8 +13,8 @@ const FeaturesSection = () => {
         Easily build <span className="span">your code</span>
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
-        {features.map((each) => (
-          <div className="flex" key={each.text}>
+        {features.map((each, index) => (
+          <div className="flex" key={index}>
             <div className="text-orange-700 mx-5 bg-neutral-900 p-2 h-fit w-fit rounded-full">
               {each.icon}
             </div>

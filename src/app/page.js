@@ -13,13 +13,13 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <>
+    <div>
       <HeroSection />
       <FeaturesSection />
       <WorkflowSection />
       <Pricing />
       <Testimonials />
       <Footer />
-    </>
+    </div>
   );
 }
