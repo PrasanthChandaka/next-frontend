@@ -8,6 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: #f1f1f1;
   background-color: #121212;
+  scroll-behavior: smooth;
 }
 
 canvas {

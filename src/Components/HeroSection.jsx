@@ -1,5 +1,4 @@
 import React from "react";
-import { Suspense } from "react";
 
 const HeroSection = () => {
   return (
@@ -22,28 +21,25 @@ const HeroSection = () => {
       </div>
 
       <div className="grid grid-cols-1 min-[400px]:grid-cols-2 gap-5 mt-20">
-        <Suspense fallback={<div className="bg-gray-500 rounded-xl"></div>}>
-          <video
-            autoPlay
-            loop
-            muted
-            className="border border-orange-700 shadow-sm shadow-orange-500 rounded-lg"
-          >
-            <source src="/video1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </Suspense>
-        <Suspense fallback={<div className="bg-gray-500 rounded-xl"></div>}>
-          <video
-            autoPlay
-            loop
-            muted
-            className="border border-orange-700 shadow-sm shadow-orange-500 rounded-lg"
-          >
-            <source src="/video2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </Suspense>
+        <video
+          autoPlay
+          loop
+          muted
+          className="border border-orange-700 shadow-sm shadow-orange-500 rounded-lg"
+        >
+          <source src="/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video
+          autoPlay
+          loop
+          muted
+          className="border border-orange-700 shadow-sm shadow-orange-500 rounded-lg"
+        >
+          <source src="/video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
